@@ -4,6 +4,8 @@ import java.util.*;
 
 public class PyRat {
 
+
+
     /* Méthode appelée une seule fois permettant d'effectuer des traitements "lourds" afin d'augmenter la performace de la méthode turn. */
     public void preprocessing(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
     }
@@ -16,16 +18,25 @@ public class PyRat {
     public void turn(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
         Point pt1 = new Point(2,1);
         Point pt2 = new Point(3,1);
-        System.out.println((fromageIci(pt1) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt1);
+        System.out.println((fromageIci(pt1, fromages) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt1);
         System.out.println((fromageIci_EnOrdreConstant(pt2) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt2);
-        System.out.println((passagePossible(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
+        System.out.println((passagePossible(pt1, pt2, laby) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
         System.out.println((passagePossible_EnOrdreConstant(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
         System.out.println("Liste des points inatteignables depuis la position " + position + " : " + pointsInatteignables(position));
     }
 
     /* Regarde dans la liste des fromages s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
-    private boolean fromageIci(Point pos) {
+    private boolean fromageIci(Point pos, List<Point> listPoint) {
+//        for (int i = 0; i < listPoint.size(); i++){
+//            if (listPoint.get(i).equals(pos)){
+//                return true;
+//            }
+//        }
+//        return false;
+        if (listPoint.contains(pos)){
+            return true;
+        }
         return false;
     }
 
@@ -37,7 +48,8 @@ public class PyRat {
 
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a ».
         @return true s'il y a un passage depuis  « de » vers « a ». */
-    private boolean passagePossible(Point de, Point a) {
+    private boolean passagePossible(Point de, Point a, Map<Point, List<Point>> laby) {
+        System.out.println(laby);
         return false;
     }
 
