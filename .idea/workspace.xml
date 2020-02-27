@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="1st commit">
+    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="2nd commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metier/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/PyRat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/PyRat.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +102,8 @@
       <workItem from="1578333857974" duration="239000" />
       <workItem from="1579190378689" duration="95000" />
       <workItem from="1579190584833" duration="16000" />
-      <workItem from="1582730331404" duration="1235000" />
+      <workItem from="1582730331404" duration="1897000" />
+      <workItem from="1582809778021" duration="1708000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1582741089239</created>
@@ -110,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582741089239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2nd commit">
+      <created>1582757431487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582757431487</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +130,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -129,7 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st commit" />
+    <MESSAGE value="2nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
   </component>
   <component name="masterDetails">
     <states>
